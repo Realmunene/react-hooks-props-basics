@@ -3,12 +3,15 @@ import React from "react";
 function BlogContent(props) {
   if(!props.isPublished){
     return null;
-  }else{
+  }else
+  {
     return (
-    <h1>{props.articleText}</h1>;
+      <div>
+    <h1>{props.articleText}</h1>
     <p>{props.minutesToRead} minutes to read</p>
+    </div>
     )
 
-}
+}}
 
 export default BlogContent;
